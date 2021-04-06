@@ -1,4 +1,6 @@
-# my-midway-project
+# Xi He
+
+Exploring and Subscribing Schedules.
 
 ## QuickStart
 

@@ -1,13 +1,15 @@
 {
-  "name": "my-midway-project",
+  "name": "xihe",
   "version": "1.0.0",
-  "description": "",
+  "description": "Exploring and Subscribing Schedules",
   "private": true,
   "dependencies": {
-    "@midwayjs/web": "^2.3.0",
     "@midwayjs/decorator": "^2.3.0",
+    "@midwayjs/web": "^2.3.0",
+    "dayjs": "^1.10.4",
     "egg": "^2.0.0",
-    "egg-scripts": "^2.10.0"
+    "egg-scripts": "^2.10.0",
+    "ics": "^2.27.0"
   },
   "devDependencies": {
     "@midwayjs/cli": "^1.0.0",

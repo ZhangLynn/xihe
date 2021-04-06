@@ -17,5 +17,7 @@ export default (appInfo: EggAppInfo) => {
     replaceEggLogger: true,
   };
 
+  config.productId = 'xihe/ics';
+
   return config;
 };
