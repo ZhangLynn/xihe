@@ -17,8 +17,11 @@
     "@types/jest": "^26.0.10",
     "@types/node": "14",
     "cross-env": "^6.0.0",
-    "mwts": "^1.0.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^6.0.0",
     "jest": "^26.4.0",
+    "lint-staged": "^10.5.4",
+    "mwts": "^1.0.5",
     "ts-jest": "^26.2.0",
     "typescript": "^4.0.0"
   },
@@ -36,7 +39,8 @@
     "lint:fix": "mwts fix",
     "ci": "npm run cov",
     "build": "midway-bin build -c",
-    "check": "luckyeye"
+    "check": "luckyeye",
+    "prepare": "husky install"
   },
   "midway-bin-clean": [
     ".vscode/.tsbuildinfo",
@@ -49,8 +53,8 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/huangcheng/xihe.git"
   },
-  "author": "",
+  "author": "HUANG Cheng",
   "license": "MIT"
 }
