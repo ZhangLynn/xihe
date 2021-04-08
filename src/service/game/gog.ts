@@ -24,7 +24,7 @@ export class GOGService {
           genres,
           salesVisibility: { fromObject },
         } = game;
-        const { date, timezone } = fromObject;
+        const { date, timezone: tz } = fromObject;
 
         return {
           productId: this.app.config.productId,
@@ -33,7 +33,7 @@ export class GOGService {
           url: `https://www.gog.com/game/${slug}`,
           categories: genres.filter(category => category.length),
           start: dayjs
-            .tz(date, timezone)
+            .tz(date, tz)
             .utc()
             .format('YYYY-M-D-H-m')
             .split('-')
