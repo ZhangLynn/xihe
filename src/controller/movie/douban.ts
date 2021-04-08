@@ -7,20 +7,20 @@ import {
 } from '@midwayjs/decorator';
 import { Context } from 'egg';
 
-import { GOGService } from '../../service';
+import { DoubanService } from '../../service';
 
 @Provide()
-@Controller('/api/game')
-export class GOGController {
+@Controller('/api/movie')
+export class DoubanController {
   @Inject()
   ctx: Context;
 
   @Inject()
-  gogService: GOGService;
+  doubanService: DoubanService;
 
-  @Get('/gog')
+  @Get('/douban')
   @ContentType('text/calendar')
   async getComingGames(): Promise<string> {
-    return await this.gogService.getComingGames();
+    return await this.doubanService.getComingMovies();
   }
 }
